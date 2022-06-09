@@ -5,8 +5,7 @@
  box-sizing: border-box;
 }
 body{
- margin-left: 2rem;
- margin-right: 2rem;
+ width: 100%;
  font-size: 20px;
  font-family: 'PT+Sans', sans-serif;
 }
@@ -15,23 +14,28 @@ nav ul{
  display: flex;
  list-style: none;
  align-items: center;
- justify-content: center;
  position: fixed;
  z-index: 16;
- width: 95%;
+ width: 100%;
  top: 0;
- background-color: #838a85;
+ background-color: #000000;
 }
 nav ul li{
  display: flex;
  margin-left:1rem;
  
 }
+nav ul li:nth-child(2){
+ margin-left: 20em;
+}
+nav ul li:nth-child(7){
+  margin-left: 5em;
+}
 ul li a{
  display: block;
  color: #3385ff;
  padding: 14px 16px;
- text-align: center;
+ align-items: center;
  text-decoration: none;
  transition: 1s ease-in-out;
 }
@@ -70,7 +74,11 @@ ul li:nth-child(1){
 /* Beginning of feature-b */
 .feature-b{
 display: flex;
-margin-top: 3rem;
+align-items: center;
+width: 100%;
+padding-left: 5%;
+padding-right: 5%;
+margin: 0 auto;
 gap: 1rem;
 }
 .feature-b img{
@@ -102,7 +110,7 @@ gap: 1rem;
  height: 53vh;
  width: 25%;
  padding-left: 0.7rem;
- background-color: #3866b5;
+ background-color: #000000;
 }
 .divider{
  height: 1px;
@@ -116,7 +124,7 @@ gap: 1rem;
 .container-1{
  border: 1px solid #ffffff;
  border-radius: 5px;
- background-color: #3866b5;
+ background-color: #000000;
  width: 20%;
  height: 62vh;
  padding-left: 0.8rem;
@@ -140,7 +148,7 @@ gap: 1rem;
 /* End of feature-b */
 /* Beginning of feature-c-table */
 table,th,td{
- text-align: center;
+ align-items: center;
  font-size: 1.1em;
  padding: 7px;
 }
@@ -159,20 +167,22 @@ td{
  margin-top: 1rem;
 }
 .table-row:nth-child(2){
- background-color: #27706f;
+ background-color: #000000;
 }
 .table-row:nth-child(4){
- background-color: #27706f;
+ background-color: #000000;
 }
 .table-row:nth-child(6){
- background-color: #27706f;
+ background-color: #000000;
 }
 .table-row:nth-child(8){
- background-color: #27706f;
+ background-color: #000000;
 }
 table{
  margin-top: 5rem;
  margin-bottom: 3rem;
+ padding-left: 5%;
+ padding-right: 5%;
 }
 /* End of feature-c-table */
 /* Beginning of feature-d */
@@ -182,12 +192,21 @@ table{
  display: block;
  margin-right: auto;
  margin-left: auto;
+ animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+ from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(359deg);
+ }
 }
 .feature-d-div{
  border: 1px solid ;
  border-radius: 10px;
- background-color:#3866b5;
- width: 90%;
+ background-color:#000000;
+ width: 100%;
  text-align: center;
  margin-bottom: 4rem;
 }
@@ -212,17 +231,24 @@ table{
 /* Beginning of footer */
 footer{
  background-color: #61616b;
- color: #ffffff;
- font-size: 0.9em;
+  margin: 0 auto;
+  width: 100%;
+  color: #ffffff;
+  font-size: 0.7em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .footer-1{
  display: flex;
- gap: 18rem;
- margin-top: 6rem;
- margin-bottom: 3rem;
+  align-items: center;
+  gap: 18rem;
+  padding-top: 2%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 .img-flex{
  display: flex;
+ align-items: center;
 }
 .img-flex img{
  height: 5vh;
@@ -230,8 +256,9 @@ footer{
 }
 .footer-2{
  display: flex;
+ align-items: center;
  line-height: 2em;
  gap: 12rem;
- margin-bottom: 2.3rem;
+ padding-bottom: 2%;
 }
 /* End of footer */

@@ -5,8 +5,7 @@
  box-sizing: border-box;
 }
 body{
- margin-left: 2rem;
- margin-right: 2rem;
+ width: 100%;
  font-size: 20px;
  font-family: 'PT+Sans', sans-serif;
 }
@@ -15,17 +14,22 @@ nav ul{
  display: flex;
  list-style: none;
  align-items: center;
- justify-content: center;
  position: fixed;
  z-index: 16;
- width: 95%;
+ width: 100%;
  top: 0;
- background-color: #838a85;
+ background-color: #000000;
 }
 nav ul li{
  display: flex;
  margin-left:1rem;
  
+}
+nav ul li:nth-child(2){
+  margin-left: 20em;
+}
+nav ul li:nth-child(7){
+  margin-left: 5em;
 }
 ul li a{
  display: block;
@@ -36,10 +40,7 @@ ul li a{
  transition: 1s ease-in-out;
 }
 ul li a:hover{
-  /*  
- background-color: black;
-   */
-   text-decoration: underline;
+ text-decoration: underline;
 }
 ul li:nth-child(1){
  color: #809fff;
@@ -58,17 +59,23 @@ ul li:nth-child(1){
 /* Beginning of first-section */
 header{
   margin-top: 4rem;
+  padding-right: 5%;
+  padding-left: 5%;
   color: #0f0f57;
 }
 .main-container{
  display: flex;
+ align-items: center;
+ width: 100%;
+ padding-left: 5%;
+ padding-right: 5%;
  margin-top: 2rem;
  gap: 5rem;
+ margin: 0 auto;
  margin-bottom: 3rem;
 }
 .main-container img{
- height: 60vh;
- width: 40%;
+ height: 50vh;
 }
 .demo-div{
  margin-top: 4rem;
@@ -88,15 +95,26 @@ header{
  grid-template-columns: auto auto auto;
  grid-template-rows: auto auto auto;
  margin-bottom: 3rem;
+ padding-left: 5%;
+ padding-right: 5%;
+ width: 100%;
+ margin: 0 auto;
 }
 .grid img{
- height: 80%;
- width: 80%;
+ height: 85%;
+ width: 85%;
 }
 /* End of second-section */
 /* Begining of third-section */
 .demo-b{
- margin-left: 8rem;
+ padding-left: 5%;
+ padding-right: 5%;
+ width: 100%;
+ margin: 0 auto;
+}
+.demo-b-div{
+  height: 100%;
+  width: 100%;
 }
 .demo-b h2{
  margin-bottom: 1.3rem;
@@ -113,7 +131,7 @@ header{
  border-radius: 5px;
  width: 26%;
  padding: 5px;
- background-color: #61616b;
+ background-color: #000000;
 }
 .box p{
  padding-bottom: 0.7rem;
@@ -123,17 +141,24 @@ header{
 /* Beginnng of footer */
 footer{
   background-color: #61616b;
+  margin: 0 auto;
+  width: 100%;
   color: #ffffff;
-  font-size: 0.9em;
+  font-size: 0.7em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .footer-1{
  display: flex;
+ align-items: center;
  gap: 18rem;
+ padding-top: 2%;
  margin-top: 6rem;
  margin-bottom: 3rem;
 }
 .img-flex{
  display: flex;
+ align-items: center;
 }
 .img-flex img{
  height: 5vh;
@@ -143,5 +168,6 @@ footer{
  display: flex;
  line-height: 2em;
  gap: 12rem;
- margin-bottom: 2.3rem;
+ line-height: 2em;
+ padding-bottom: 2%;
 }

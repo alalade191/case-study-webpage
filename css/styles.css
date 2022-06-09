@@ -5,8 +5,7 @@
  box-sizing: border-box;
 }
 body{
- margin-left: 2rem;
- margin-right: 2rem;
+  width: 100%;
  font-size: 20px;
  font-family: 'PT+Sans', sans-serif;
 }
@@ -15,12 +14,17 @@ nav ul{
  display: flex;
  list-style: none;
  align-items: center;
- justify-content: center;
  position: fixed;
  z-index: 16;
- width: 95%;
+ width: 100%;
  top: 0;
- background-color: #838a85;
+ background-color: #000000;
+}
+nav ul li:nth-child(2){
+  margin-left: 20em;
+}
+nav ul li:nth-child(7){
+  margin-left: 5em;
 }
 nav ul li{
  display: flex;
@@ -30,14 +34,11 @@ ul li a{
  display: block;
  color: #3385ff;
  padding: 14px 16px;
- text-align: center;
+ align-items: center;
  text-decoration: none;
  transition: 1s ease-in-out;
 }
 ul li a:hover{
-  /*  
- background-color: black;
-   */
    text-decoration: underline;
 }
 ul li:nth-child(1){
@@ -51,15 +52,18 @@ ul li:nth-child(1){
   margin-top: 6rem;
 }
 .box-a{
- display: grid;
- grid-template-columns: 1fr 1fr;
+ display: flex;
  align-items: center;
- justify-content: space-between;
- margin-top: 1rem;
+ width: 100%;
+ margin: 0 auto;
+ padding-left: 5%;
+ padding-right: 5%;
 }
 .box-a img{
- order: 1;
- height: 60vh;
+  order: 1;
+ height: 50vh;
+ width: ;
+ margin-top: 6rem;
 }
 .box-a-xl{
  font-size: 2em;
@@ -86,6 +90,10 @@ ul li:nth-child(1){
 }
 /* End of first-section */
 /* Beginning of box-b */
+.box-b{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .box-b div{
  align-items: center;
  justify-content: center;
@@ -107,7 +115,12 @@ ul li:nth-child(1){
 /* Beginning of box-c */
 .box-c{
  display: flex;
+ align-items: center;
+ margin: 0 auto;
  gap: 5rem;
+ padding-right: 5%;
+ padding-left: 5%;
+ width: 100%;
  padding-bottom: 2rem;
 }
 .lady{
@@ -136,7 +149,12 @@ label{
 /* Beginning of box-d */
 .box-d{
   display: flex;
+  align-items: center;
+  margin: 0 auto;
   gap: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
   margin-bottom: 2rem;
 }
 .box-d-xl{
@@ -149,14 +167,16 @@ label{
 .box-d img{
  height: 50vh;
 }
-.box-d-div{
-  margin-top: 3rem;
-}
 /* End of box-d */
 /* Beginning of box-e */
 .box-e{
  display: flex;
+ align-items: center;
  gap: 5rem;
+ padding-left: 5%;
+ padding-right: 5%;
+ margin: 0 auto;
+ width: 100%;
 }
 .box-e-xl{
   color: #0f0f57;
@@ -166,7 +186,8 @@ label{
   color: #838a85;
 }
 .box-e-div{
-  margin-top: 3rem;
+width: 100%;
+width: 100%;
 }
 .box-e img{
  height: 50vh;
@@ -175,17 +196,24 @@ label{
 /* Beginnng of footer */
 footer{
   background-color: #61616b;
+  margin: 0 auto;
+  width: 100%;
   color: #ffffff;
-  font-size: 0.9em;
+  font-size: 0.7em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .footer-1{
   display: flex;
+  align-items: center;
   gap: 18rem;
+  padding-top: 2%;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
 .img-flex{
   display: flex;
+  align-items: center;
 }
 .img-flex img{
   height: 5vh;
@@ -193,9 +221,98 @@ footer{
 }
 .footer-2{
   display: flex;
+  align-items: center;
   line-height: 2em;
   gap: 12rem;
-  margin-bottom: 2.3rem;
+  padding-bottom: 2%;
+}
+
+@media screen and (max-width: 480px){
+  .box-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 0;
+    width: 100%;
+  }
+
+  .box-a-xl{
+    margin-top: 3em;
+  }
+
+  .box-c{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .box-d{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .box-d-div{
+    margin-top: 2rem;
+  }
+  .box-d-xl{
+    font-size: 1.1em;
+  }
+
+  .box-e{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .box-e-xl{
+    font-size: ;
+  }
+  .box-e-md{
+    font-size: ;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+  }
+
+  nav ul li:nth-child(7){
+    margin-left: 0;
+  }
+
+  nav ul li:nth-child(2){
+    margin-left: 0;
+  }
+
+  .first-div{
+    margin-top: 0;
+  }
+  .box-a img{
+    order: 0;
+    margin-top: 1rem;
+  }
+  .box-a-xl{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2rem;
+  }
+  .box-b-xl{
+    font-size: 1.5em;
+  }
+  .second-div{
+    padding-top: 0;
+  }
 }
 
 
